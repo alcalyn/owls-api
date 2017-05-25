@@ -1,0 +1,25 @@
+Alcalyn\Owls\Model\Owl:
+    type: entity
+    table: eole_games_owls_owl
+    repositoryClass: Alcalyn\Owls\Repository\OwlRepository
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        color:
+            type: smallint
+        alive:
+            type: boolean
+    manyToOne:
+        party:
+            targetEntity: Alcalyn\Owls\Model\Party
+            inversedBy: owls
+        deckCard:
+            targetEntity: Alcalyn\Owls\Model\DeckCard
+    oneToMany:
+        bets:
+            targetEntity: Alcalyn\Owls\Model\Bet
+            mappedBy: owl
+            orphanRemoval: true

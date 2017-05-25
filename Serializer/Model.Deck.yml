@@ -1,0 +1,14 @@
+Alcalyn\Owls\Model\Deck:
+    exclusion_policy: ALL
+    properties:
+        deckCards:
+            type: ArrayCollection<Alcalyn\Owls\Model\DeckCard>
+            groups: [push_server]
+    virtual_properties:
+        getSize:
+            type: integer
+            serialized_name: size
+        getCards:
+            type: array<Alcalyn\Owls\Model\Card>
+            serialized_name: cards
+            groups: [card_visible]

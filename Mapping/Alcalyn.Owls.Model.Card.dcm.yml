@@ -1,0 +1,16 @@
+Alcalyn\Owls\Model\Card:
+    type: entity
+    table: eole_games_owls_card
+    repositoryClass: Alcalyn\Owls\Repository\CardRepository
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        type:
+            type: smallint
+        color:
+            type: smallint
+        number:
+            type: smallint

@@ -1,0 +1,5 @@
+Alcalyn\Owls\Event\PlayBetEvent:
+    exclusion_policy: ALL
+    properties:
+        bet:
+            type: Alcalyn\Owls\Model\Bet

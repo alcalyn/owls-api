@@ -1,0 +1,5 @@
+Alcalyn\Owls\Event\Event:
+    exclusion_policy: ALL
+    properties:
+        party:
+            type: Alcalyn\Owls\Model\Party

@@ -1,0 +1,32 @@
+Alcalyn\Owls\Model\Party:
+    type: entity
+    table: eole_games_owls_party
+    repositoryClass: Alcalyn\Owls\Repository\PartyRepository
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        playerTurn:
+            type: smallint
+        turnPhase:
+            type: boolean
+        version:
+            type: integer
+            version: true
+    oneToOne:
+        eoleParty:
+            targetEntity: Eole\Core\Model\Party
+    oneToMany:
+        owls:
+            targetEntity: Alcalyn\Owls\Model\Owl
+            mappedBy: party
+        players:
+            targetEntity: Alcalyn\Owls\Model\Player
+            mappedBy: party
+    manyToOne:
+        deck:
+            targetEntity: Alcalyn\Owls\Model\Deck
+            cascade:
+                - all

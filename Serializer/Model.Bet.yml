@@ -1,0 +1,9 @@
+Alcalyn\Owls\Model\Bet:
+    exclusion_policy: ALL
+    properties:
+        player:
+            type: Alcalyn\Owls\Model\Player
+        owl:
+            type: Alcalyn\Owls\Model\Owl
+        order:
+            type: integer

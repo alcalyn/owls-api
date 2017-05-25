@@ -1,0 +1,14 @@
+Alcalyn\Owls\Model\Player:
+    exclusion_policy: NONE
+    properties:
+        id:
+            type: integer
+            exclude: true
+        eolePlayer:
+            type: Eole\Core\Model\Player
+        party:
+            type: Alcalyn\Owls\Model\Player
+        deck:
+            type: Alcalyn\Owls\Model\Deck
+        order:
+            type: integer

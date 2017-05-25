@@ -1,0 +1,24 @@
+Alcalyn\Owls\Model\Player:
+    type: entity
+    table: eole_games_owls_player
+    repositoryClass: Alcalyn\Owls\Repository\PlayerRepository
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        order:
+            type: integer
+            column: "`order`"
+            nullable: true
+    manyToOne:
+        party:
+            targetEntity: Alcalyn\Owls\Model\Party
+            inversedBy: players
+        eolePlayer:
+            targetEntity: Eole\Core\Model\Player
+        deck:
+            targetEntity: Alcalyn\Owls\Model\Deck
+            cascade:
+                - all

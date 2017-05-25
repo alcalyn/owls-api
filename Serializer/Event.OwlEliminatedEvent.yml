@@ -1,0 +1,5 @@
+Alcalyn\Owls\Event\OwlEliminatedEvent:
+    exclusion_policy: ALL
+    properties:
+        owl:
+            type: Alcalyn\Owls\Model\Owl

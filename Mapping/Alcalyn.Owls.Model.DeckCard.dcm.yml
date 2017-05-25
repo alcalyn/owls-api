@@ -1,0 +1,17 @@
+Alcalyn\Owls\Model\DeckCard:
+    type: entity
+    table: eole_games_owls_deck_card
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        weight:
+            type: smallint
+    manyToOne:
+        deck:
+            targetEntity: Alcalyn\Owls\Model\Deck
+            inversedBy: deckCards
+        card:
+            targetEntity: Alcalyn\Owls\Model\Card

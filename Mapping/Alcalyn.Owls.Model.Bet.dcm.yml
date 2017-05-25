@@ -1,0 +1,18 @@
+Alcalyn\Owls\Model\Bet:
+    type: entity
+    table: eole_games_owls_bet
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        order:
+            type: smallint
+            column: "`order`"
+    manyToOne:
+        player:
+            targetEntity: Alcalyn\Owls\Model\Player
+        owl:
+            targetEntity: Alcalyn\Owls\Model\Owl
+            inversedBy: bets

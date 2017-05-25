@@ -1,0 +1,11 @@
+Alcalyn\Owls\Model\Owl:
+    exclusion_policy: ALL
+    properties:
+        color:
+            type: integer
+        bets:
+            type: ArrayCollection<Alcalyn\Owls\Model\Bet>
+        deckCard:
+            type: Alcalyn\Owls\Model\DeckCard
+        alive:
+            type: boolean

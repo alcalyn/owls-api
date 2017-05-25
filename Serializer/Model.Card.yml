@@ -1,0 +1,11 @@
+Alcalyn\Owls\Model\Card:
+    exclusion_policy: NONE
+    properties:
+        id:
+            type: integer
+        type:
+            type: integer
+        color:
+            type: integer
+        number:
+            type: integer

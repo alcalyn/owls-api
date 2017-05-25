@@ -1,0 +1,9 @@
+Alcalyn\Owls\Event\PlayCardEvent:
+    exclusion_policy: ALL
+    properties:
+        owl:
+            type: Alcalyn\Owls\Model\Owl
+        deckCard:
+            type: Alcalyn\Owls\Model\DeckCard
+        hasElimination:
+            type: boolean

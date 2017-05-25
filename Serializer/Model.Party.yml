@@ -1,0 +1,21 @@
+Alcalyn\Owls\Model\Party:
+    exclusion_policy: NONE
+    properties:
+        id:
+            type: integer
+            exclude: true
+        eoleParty:
+            type: Eole\Core\Model\Party
+        deck:
+            type: Alcalyn\Owls\Model\Deck
+            groups: [push_server]
+        owls:
+            type: ArrayCollection<Alcalyn\Owls\Model\Owl>
+        players:
+            type: ArrayCollection<Alcalyn\Owls\Model\Player>
+        playerTurn:
+            type: integer
+        turnPhase:
+            type: boolean
+        version:
+            type: integer

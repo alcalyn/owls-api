@@ -1,0 +1,7 @@
+Alcalyn\Owls\Model\DeckCard:
+    exclusion_policy: ALL
+    properties:
+        id:
+            type: integer
+        card:
+            type: Alcalyn\Owls\Model\Card
